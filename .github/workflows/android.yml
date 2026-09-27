@@ -25,7 +25,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       - name: Upload Debug APK
-  uses: actions/upload-artifact@v4
-  with:
-    name: renjana-debug-apks
-    path: app/build/outputs/apk/debug/*.apk
+        uses: actions/upload-artifact@v4
+        with:
+          name: renjana-debug-apks
+          path: app/build/outputs/apk/debug/*.apk
